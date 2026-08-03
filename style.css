@@ -1,0 +1,235 @@
+:root {
+  --container-padding: 1rem;
+  --body-font: poppins;
+  --heading-font: inter;
+  --color-primary: #1d4ed8;
+  --color-secondary: #f59e0b;
+  --color-accent: #10b981;
+  --color-background: #f8fafc;
+  --color-heading: #0f172a;
+  --color-body: #475569;
+}
+/*Global*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 10px 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: var(--color-heading);
+}
+ul {
+  list-style-type: none;
+}
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.section-opener {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.card {
+  background: white;
+}
+.container {
+  display: grid;
+}
+.active {
+  color: var(--color-secondary);
+  font-weight: bold;
+  border-bottom-color: var(--color-secondary)!important;
+}
+.cta {
+  display: block;
+  padding: 5px 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px 0;
+  /* width: 100%; */
+}
+.secondary-cta {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+.primary-cta {
+  background: var(--color-primary);
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  background: var(--background-color);
+  font-family: var(--body-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  color: var(--color-body);
+  background-color: var(--color-background);
+  /* overflow: hidden; */
+}
+/*Header*/
+header {
+  padding: var(--container-padding);
+  position: relative;
+  background-image: url(assets/university-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav {
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
+
+
+}
+nav.hide-on-lg #side-nav /*side-nav*/ {
+  z-index: 100;
+  background: white;
+  color: inherit;
+  width: 230px;
+  height: 100vh;
+  padding: 1rem;
+  border-left: 1px solid rgba(128, 128, 128, 0.725);
+  box-shadow: 0 0 5px grey;
+  position: fixed;
+  top: 0;
+  right: -230px;/*The width of the side-nav*/
+  transition: right 0.3s ease;
+}
+nav #side-nav li {
+  margin: 1rem 0;
+}
+nav #side-nav a {
+  display: block;
+  border-bottom: 1px solid grey;
+}
+nav.hide-on-lg #side-nav.visible {
+  right: 0px;/*The width of the side-nav*/
+}
+.hero {
+  margin-top: 3rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h1 span {
+  font-size: 2.3rem;
+  display: block;
+}
+/*main*/
+section {
+  padding: var(--container-padding);
+}
+/* #About */
+#about .container{
+  grid-template-columns: 1fr;
+}
+/*Why choose us*/
+#why-choose-us .container {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.icon-card {
+  /* border: 1px solid grey; */
+  box-shadow: 0 0 4px grey;
+  min-height: 180px;
+  border-radius: 1rem;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.icon-card p {
+  text-align: center;
+  margin: 5px;
+}
+.icon-card .icon {
+  /* width: 5rem; */
+  font-size: 5rem;
+  /* border: 1px ; */
+}
+/* #programs */
+#programs .container {
+  gap: 1rem;
+}
+.img-overlay-card {
+  position: relative;
+  height: 300px;
+  /* background: url(assets/husna-miskandar-FC4z3l4sUYc-unsplash.jpg); */
+  /* background-size: 100% 100%; */
+  /* background-position: center; */
+  border-radius: 1rem;
+}
+.img-overlay-card .overlay {
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 1rem;
+  background: linear-gradient(to top, rgba(10, 10, 10, 0.889) 70%, transparent);
+}
+.img-overlay-card .text {
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  
+}
+.img-overlay-card .text p {
+  margin: 0;
+  padding: 0;
+  /* font-size: 1rem; */
+  line-height: 1.2;
+}
+/*Campus Life*/
+.container {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+/*FAQ*/
+.faq {
+  border-bottom: 1px solid grey;
+}
+.faq .question {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq .answer {
+  display: none;
+}
+.answer.visible {
+  display: block;
+}
+/*Footer*/
+footer {
+  border-top: 1px solid grey;
+  margin: var(--container-padding);
+  padding: 1rem;
+  text-align: center;
+}
