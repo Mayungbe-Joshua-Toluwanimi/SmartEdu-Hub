@@ -10,10 +10,15 @@ showSideNavBtn.addEventListener('click',toggleSideNav);
 hideSideNavBtn.addEventListener('click',toggleSideNav);
 
 
-//FAQ toggle
-let toggleFaqBtn = document.querySelectorAll('#toggle-faq-btn');
-let faqAnswer = document.querySelectorAll('.answer');
-function toggleFaqVisibility() {
-  faqAnswer.classList.toggle('visible');
+// FAQ toggle
+var faqs = document.querySelectorAll('.faq');
+
+function toggleFaq() {
+  var answer = this.parentElement.querySelector('.answer');
+  answer.classList.toggle('visible');
 }
-toggleFaqBtn.addEventListener('click', toggleFaqVisibility);
+
+for (var i = 0; i < faqs.length; i++) {
+  var question = faqs[i].querySelector('.question');
+  question.addEventListener('click', toggleFaq);
+}
