@@ -6,15 +6,26 @@ nav.show-on-lg {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: white;
-  border: 1px solid grey;
-  padding: 1rem;
+  /* align-items: baseline; */
+  background: var(--color-background);
+  /* border: 1px solid grey; */
+  padding: 1rem 3rem;
+  z-index: 100;
+  box-shadow: 2px 2px 1rem grey;
 }
 nav.show-on-lg ul {
   display: flex;
   flex-direction: row;
+  /* justify-content: baseline; */
+  /* align-items: baseline; */
   border: 1px solid grey;
   gap: 1rem;
+  /* padding: 0; */
+}
+nav.show-on-lg ul li {
+  border: 1px solid;
+  /* padding: 0; */
+  /* margin: 0; */
 }
 nav.show-on-lg a.primary-cta {
   padding: 5px 1rem;
@@ -35,14 +46,59 @@ nav.show-on-lg a.primary-cta {
   }
   .show-on-lg {
     display: block;
+    
+  }
+  body {
+    font-size: 1.2rem;
   }
     .cta {
     display: inline-block;
-    padding: 5px 1rem;
+    padding: 10px 1.4rem;
     border-radius: 1rem;
-    text-align: center;
-    font-weight: bold;
+    /* text-align: center; */
+    /* font-weight: bold; */
     margin: 15px 0;
   }
-  
+  nav.show-on-lg .cta {
+    padding: 8px 1rem;
+  }
+  .hero {
+    margin-top: 9rem;
+  }
+  h1 {
+    font-size: 2.8rem;
+    color: var(--color-primary);
+  }
+  h1 span {
+    font-size: 2.3rem;
+    display: block;
+    color: var(--color-heading);
+  }
+  .container {
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+  }
+  .faq-container {
+    width: 80%;
+    margin: auto;
+  }
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+  section#admissions .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1023px) {
+  :root {
+    --container-padding: 2rem 5rem;
+  }
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  section#about .container {
+    grid-template-columns: 50% 50%;
+  }
 }

@@ -45,6 +45,8 @@ img {
 }
 .container {
   display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 .active {
   color: var(--color-secondary);
@@ -59,6 +61,9 @@ img {
   font-weight: bold;
   margin: 15px 0;
   /* width: 100%; */
+  box-shadow: 0 0 7px rgba(128, 128, 128, 0.926);
+}
+.cta:hover {
 }
 .secondary-cta {
   border: 1px solid var(--color-primary);
@@ -101,8 +106,6 @@ nav {
   /* position: fixed; */
   display: flex;
   justify-content: space-between;
-
-
 }
 nav.hide-on-lg #side-nav /*side-nav*/ {
   z-index: 100;
@@ -128,28 +131,34 @@ nav #side-nav a {
 nav.hide-on-lg #side-nav.visible {
   right: 0px;/*The width of the side-nav*/
 }
+.hero .container {
+  gap: 0;
+}
 .hero {
   margin-top: 3rem;
 }
 h1 {
   font-size: 2.5rem;
+  color: var(--color-primary);
 }
 h1 span {
-  font-size: 2.3rem;
+  font-size: 2rem;
   display: block;
+  color: var(--color-heading);
 }
 /*main*/
 section {
   padding: var(--container-padding);
+  margin-top: 2rem;
 }
 /* #About */
 #about .container{
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
 }
 /*Why choose us*/
 #why-choose-us .container {
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  /* grid-template-columns: 1fr;
+  gap: 1rem; */
 }
 .icon-card {
   /* border: 1px solid grey; */
@@ -185,6 +194,9 @@ section {
   /* background-position: center; */
   border-radius: 1rem;
 }
+/* .img-overlay-card:hover {
+  background-size: 150% 150%;
+} */
 .img-overlay-card .overlay {
   position: absolute;
   height: 40%;
@@ -219,10 +231,13 @@ section#admissions .primary-cta {
   background: white;
   color: var(--color-primary);
 }
+section#admissions .container {
+  display: block;
+}
 /*Campus Life*/
 .container {
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  /* grid-template-columns: 1fr;
+  gap: 1rem; */
 }
 /*FAQ*/
 .faq {
@@ -242,8 +257,15 @@ section#admissions .primary-cta {
 }
 /*Footer*/
 footer {
-  border-top: 1px solid grey;
-  margin: var(--container-padding);
-  padding: 1rem;
-  text-align: center;
+  /* border-top: 1px solid grey; */
+  /* margin: var(--container-padding); */
+  padding: var(--container-padding);
+  /* text-align: center; */
+  background-color: var(--color-primary);
+  margin: 0;
+  color: white;
+  /* font-size: 11px; */
+}
+footer a {
+  text-decoration: underline;
 }
