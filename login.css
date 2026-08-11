@@ -1,0 +1,19 @@
+.container {
+  padding: var(--container-padding);
+}
+.form {
+  /* margin-top: 3rem; */
+  /* border: 1px solid grey; */
+  border-radius: 1rem;
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.34);
+}
+input {
+  border: 1px solid black;
+  font-size: inherit;
+  padding: 5px;
+  font-size: inherit;
+  border-radius: 2px;
+}

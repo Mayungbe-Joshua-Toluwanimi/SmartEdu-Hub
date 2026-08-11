@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payments | SmartEdu University</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0">
+
+    <link rel="stylesheet" href="css/student.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+
+            <a href="student-dashboard.html" class="portal-logo">
+
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">
+                        school
+                    </span>
+                </div>
+
+                <div>
+                    <h2>SmartEdu</h2>
+                    <span>Student Portal</span>
+                </div>
+
+            </a>
+
+            <button class="close-sidebar" id="close-sidebar">
+
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">
+                MAIN MENU
+            </p>
+
+
+            <a href="student-dashboard.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    dashboard
+                </span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="profile.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+
+                <span>My Profile</span>
+
+            </a>
+
+
+            <a href="courses.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    menu_book
+                </span>
+
+                <span>My Courses</span>
+
+            </a>
+
+
+            <a href="assignments.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    assignment
+                </span>
+
+                <span>Assignments</span>
+
+                <span class="notification-count">
+                    2
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    fact_check
+                </span>
+
+                <span>Attendance</span>
+
+            </a>
+
+
+            <a href="payments.html" class="nav-link active">
+
+                <span class="material-symbols-outlined">
+                    payments
+                </span>
+
+                <span>Payments</span>
+
+            </a>
+
+
+            <a href="library.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    local_library
+                </span>
+
+                <span>E-Library</span>
+
+            </a>
+
+
+            <a href="notifications.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+
+                <span>Notifications</span>
+
+                <span class="notification-count">
+                    3
+                </span>
+
+            </a>
+
+
+            <p class="nav-title second-title">
+                ACCOUNT
+            </p>
+
+
+            <a href="#" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+
+                <span>Settings</span>
+
+            </a>
+
+
+            <a href="#" class="nav-link logout">
+
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+
+                <span>Logout</span>
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="menu-btn" id="menu-btn">
+
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+
+            </button>
+
+
+            <div class="topbar-search">
+
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <input type="text" placeholder="Search...">
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="notification-btn">
+
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="student-user">
+
+                    <div class="student-avatar">
+                        JT
+                    </div>
+
+                    <div class="student-info">
+
+                        <strong>
+                            Joshua Toluwanimi
+                        </strong>
+
+                        <span>
+                            Computer Science
+                        </span>
+
+                    </div>
+
+                    <span class="material-symbols-outlined dropdown-icon">
+                        keyboard_arrow_down
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+
+        <section class="dashboard">
+
+            <div class="page-heading">
+
+                <div>
+
+                    <p class="welcome-text">
+                        Financial Services
+                    </p>
+
+                    <h1>
+                        Payments
+                    </h1>
+
+                    <p>
+                        View your fees, payment status and transaction history.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PAYMENT SUMMARY -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <span class="material-symbols-outlined">
+                            account_balance_wallet
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Total Fees
+                        </span>
+
+                        <h2>
+                            ₦250,000
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <span class="material-symbols-outlined">
+                            payments
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Amount Paid
+                        </span>
+
+                        <h2>
+                            ₦200,000
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <span class="material-symbols-outlined">
+                            pending
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Outstanding
+                        </span>
+
+                        <h2>
+                            ₦50,000
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+
+                        <span class="material-symbols-outlined">
+                            receipt_long
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Transactions
+                        </span>
+
+                        <h2>
+                            5
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CURRENT FEES -->
+
+            <div class="dashboard-card payment-fees-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h3>
+                            Current Fees
+                        </h3>
+
+                        <p>
+                            Your fees for the current academic session.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="fee-list">
+
+                    <div class="fee-item">
+
+                        <div class="fee-info">
+
+                            <div class="fee-icon">
+                                <span class="material-symbols-outlined">
+                                    school
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    School Fees
+                                </strong>
+
+                                <span>
+                                    2025/2026 Academic Session
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="fee-amount">
+
+                            <strong>
+                                ₦150,000
+                            </strong>
+
+                            <span class="payment-status paid">
+                                Paid
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="fee-item">
+
+                        <div class="fee-info">
+
+                            <div class="fee-icon">
+                                <span class="material-symbols-outlined">
+                                    menu_book
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Course Registration Fee
+                                </strong>
+
+                                <span>
+                                    2025/2026 Academic Session
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="fee-amount">
+
+                            <strong>
+                                ₦25,000
+                            </strong>
+
+                            <span class="payment-status paid">
+                                Paid
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="fee-item">
+
+                        <div class="fee-info">
+
+                            <div class="fee-icon">
+                                <span class="material-symbols-outlined">
+                                    local_library
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Library Fee
+                                </strong>
+
+                                <span>
+                                    2025/2026 Academic Session
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="fee-amount">
+
+                            <strong>
+                                ₦25,000
+                            </strong>
+
+                            <span class="payment-status paid">
+                                Paid
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="fee-item">
+
+                        <div class="fee-info">
+
+                            <div class="fee-icon">
+                                <span class="material-symbols-outlined">
+                                    home
+                                </span>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Hostel Fee
+                                </strong>
+
+                                <span>
+                                    2025/2026 Academic Session
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="fee-amount">
+
+                            <strong>
+                                ₦50,000
+                            </strong>
+
+                            <button class="pay-btn">
+                                Pay Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRANSACTION HISTORY -->
+
+            <div class="dashboard-card transaction-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h3>
+                            Transaction History
+                        </h3>
+
+                        <p>
+                            Your recent payments and transactions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="course-table-wrapper">
+
+                    <table class="course-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Transaction ID
+                                </th>
+
+                                <th>
+                                    Description
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Amount
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Receipt
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    EDU-28491
+                                </td>
+
+                                <td>
+                                    School Fees
+                                </td>
+
+                                <td>
+                                    Aug 02, 2026
+                                </td>
+
+                                <td>
+                                    ₦150,000
+                                </td>
+
+                                <td>
+                                    <span class="payment-status paid">
+                                        Successful
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="receipt-btn">
+                                        <span class="material-symbols-outlined">
+                                            receipt_long
+                                        </span>
+                                        Receipt
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    EDU-28163
+                                </td>
+
+                                <td>
+                                    Library Fee
+                                </td>
+
+                                <td>
+                                    Jul 28, 2026
+                                </td>
+
+                                <td>
+                                    ₦25,000
+                                </td>
+
+                                <td>
+                                    <span class="payment-status paid">
+                                        Successful
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="receipt-btn">
+                                        <span class="material-symbols-outlined">
+                                            receipt_long
+                                        </span>
+                                        Receipt
+                                    </button>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    EDU-27942
+                                </td>
+
+                                <td>
+                                    Course Registration
+                                </td>
+
+                                <td>
+                                    Jul 22, 2026
+                                </td>
+
+                                <td>
+                                    ₦25,000
+                                </td>
+
+                                <td>
+                                    <span class="payment-status paid">
+                                        Successful
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button class="receipt-btn">
+                                        <span class="material-symbols-outlined">
+                                            receipt_long
+                                        </span>
+                                        Receipt
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/student.js"></script>
+</body>
+
+</html>

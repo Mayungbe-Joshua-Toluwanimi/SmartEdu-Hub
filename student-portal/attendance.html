@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance | SmartEdu University</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0">
+
+    <link rel="stylesheet" href="css/student.css">
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+
+            <a href="student-dashboard.html" class="portal-logo">
+
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">school</span>
+                </div>
+
+                <div>
+                    <h2>SmartEdu</h2>
+                    <span>Student Portal</span>
+                </div>
+
+            </a>
+
+            <button class="close-sidebar" id="close-sidebar">
+
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">
+                MAIN MENU
+            </p>
+
+
+            <a href="student-dashboard.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    dashboard
+                </span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="profile.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+
+                <span>My Profile</span>
+
+            </a>
+
+
+            <a href="courses.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    menu_book
+                </span>
+
+                <span>My Courses</span>
+
+            </a>
+
+
+            <a href="assignments.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    assignment
+                </span>
+
+                <span>Assignments</span>
+
+                <span class="notification-count">
+                    2
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="nav-link active">
+
+                <span class="material-symbols-outlined">
+                    fact_check
+                </span>
+
+                <span>Attendance</span>
+
+            </a>
+
+
+            <a href="payments.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    payments
+                </span>
+
+                <span>Payments</span>
+
+            </a>
+
+
+            <a href="library.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    local_library
+                </span>
+
+                <span>E-Library</span>
+
+            </a>
+
+
+            <a href="notifications.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+
+                <span>Notifications</span>
+
+                <span class="notification-count">
+                    3
+                </span>
+
+            </a>
+
+
+            <p class="nav-title second-title">
+                ACCOUNT
+            </p>
+
+
+            <a href="#" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+
+                <span>Settings</span>
+
+            </a>
+
+
+            <a href="#" class="nav-link logout">
+
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+
+                <span>Logout</span>
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="menu-btn" id="menu-btn">
+
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+
+            </button>
+
+
+            <div class="topbar-search">
+
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <input type="text" placeholder="Search...">
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="notification-btn">
+
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="student-user">
+
+                    <div class="student-avatar">
+                        JT
+                    </div>
+
+                    <div class="student-info">
+
+                        <strong>
+                            Joshua Toluwanimi
+                        </strong>
+
+                        <span>
+                            Computer Science
+                        </span>
+
+                    </div>
+
+                    <span class="material-symbols-outlined dropdown-icon">
+                        keyboard_arrow_down
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- PAGE -->
+
+        <section class="dashboard">
+
+
+            <div class="page-heading">
+
+                <div>
+
+                    <p class="welcome-text">
+                        Academic Records
+                    </p>
+
+                    <h1>
+                        Attendance
+                    </h1>
+
+                    <p>
+                        Track your attendance across registered courses.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ATTENDANCE SUMMARY -->
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <span class="material-symbols-outlined">
+                            fact_check
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Overall Attendance
+                        </span>
+
+                        <h2>
+                            87%
+                        </h2>
+
+                        <p class="positive">
+                            Good standing
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Present
+                        </span>
+
+                        <h2>
+                            39
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <span class="material-symbols-outlined">
+                            schedule
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Late
+                        </span>
+
+                        <h2>
+                            3
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Absent
+                        </span>
+
+                        <h2>
+                            3
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE ATTENDANCE -->
+
+            <div class="dashboard-card attendance-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h3>
+                            Course Attendance
+                        </h3>
+
+                        <p>
+                            Attendance percentage by course
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="attendance-course-list">
+
+
+                    <!-- COURSE -->
+
+                    <div class="attendance-course">
+
+                        <div class="attendance-course-info">
+
+                            <strong>
+                                CSC 401
+                            </strong>
+
+                            <span>
+                                Software Engineering
+                            </span>
+
+                        </div>
+
+
+                        <div class="attendance-bar">
+
+                            <div
+                                class="attendance-progress good"
+                                style="width: 94%;"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="attendance-percent good-text">
+                            94%
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- COURSE -->
+
+                    <div class="attendance-course">
+
+                        <div class="attendance-course-info">
+
+                            <strong>
+                                CSC 403
+                            </strong>
+
+                            <span>
+                                Web Application Development
+                            </span>
+
+                        </div>
+
+
+                        <div class="attendance-bar">
+
+                            <div
+                                class="attendance-progress good"
+                                style="width: 91%;"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="attendance-percent good-text">
+                            91%
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- COURSE -->
+
+                    <div class="attendance-course">
+
+                        <div class="attendance-course-info">
+
+                            <strong>
+                                CSC 405
+                            </strong>
+
+                            <span>
+                                Database Management
+                            </span>
+
+                        </div>
+
+
+                        <div class="attendance-bar">
+
+                            <div
+                                class="attendance-progress warning"
+                                style="width: 78%;"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="attendance-percent warning-text">
+                            78%
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- COURSE -->
+
+                    <div class="attendance-course">
+
+                        <div class="attendance-course-info">
+
+                            <strong>
+                                CSC 407
+                            </strong>
+
+                            <span>
+                                Computer Networks
+                            </span>
+
+                        </div>
+
+
+                        <div class="attendance-bar">
+
+                            <div
+                                class="attendance-progress good"
+                                style="width: 89%;"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="attendance-percent good-text">
+                            89%
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- COURSE -->
+
+                    <div class="attendance-course">
+
+                        <div class="attendance-course-info">
+
+                            <strong>
+                                CSC 409
+                            </strong>
+
+                            <span>
+                                Human Computer Interaction
+                            </span>
+
+                        </div>
+
+
+                        <div class="attendance-bar">
+
+                            <div
+                                class="attendance-progress good"
+                                style="width: 92%;"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="attendance-percent good-text">
+                            92%
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- COURSE -->
+
+                    <div class="attendance-course">
+
+                        <div class="attendance-course-info">
+
+                            <strong>
+                                CSC 411
+                            </strong>
+
+                            <span>
+                                Artificial Intelligence
+                            </span>
+
+                        </div>
+
+
+                        <div class="attendance-bar">
+
+                            <div
+                                class="attendance-progress warning"
+                                style="width: 76%;"
+                            ></div>
+
+                        </div>
+
+
+                        <strong class="attendance-percent warning-text">
+                            76%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RECENT RECORDS -->
+
+            <div class="dashboard-card attendance-record-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h3>
+                            Recent Attendance Records
+                        </h3>
+
+                        <p>
+                            Your latest attendance activity
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="course-table-wrapper">
+
+                    <table class="course-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Course
+                                </th>
+
+                                <th>
+                                    Class
+                                </th>
+
+                                <th>
+                                    Time
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Aug 10, 2026
+                                </td>
+
+                                <td>
+                                    CSC 403
+                                </td>
+
+                                <td>
+                                    Web Development
+                                </td>
+
+                                <td>
+                                    10:00 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="attendance-record present">
+                                        Present
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Aug 09, 2026
+                                </td>
+
+                                <td>
+                                    CSC 405
+                                </td>
+
+                                <td>
+                                    Database Management
+                                </td>
+
+                                <td>
+                                    12:00 PM
+                                </td>
+
+                                <td>
+
+                                    <span class="attendance-record present">
+                                        Present
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Aug 08, 2026
+                                </td>
+
+                                <td>
+                                    CSC 407
+                                </td>
+
+                                <td>
+                                    Computer Networks
+                                </td>
+
+                                <td>
+                                    9:00 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="attendance-record late">
+                                        Late
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Aug 06, 2026
+                                </td>
+
+                                <td>
+                                    CSC 401
+                                </td>
+
+                                <td>
+                                    Software Engineering
+                                </td>
+
+                                <td>
+                                    11:00 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="attendance-record absent">
+                                        Absent
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/student.js"></script>
+
+</body>
+
+</html>

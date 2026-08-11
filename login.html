@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="login.css">
+  <title>SmartEdu | Welcome</title>
+</head>
+
+<body>
+  <header>
+    <nav class="hide-on-lg">
+      <span>LOGO</span>
+      <span class="material-symbols-outlined" id="show-side-nav">
+        menu
+      </span>
+      <ul id="side-nav">
+        <span id="hide-side-nav">X</span>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#programs">Courses</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#campus">Gallery</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="show-on-lg">
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Courses</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#campus">Gallery</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="login.html">Log In</a></li> -->
+        <!-- <li><a href="#">About</a></li> -->
+      </ul>
+      <a class="primary-cta">Log In</a>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="form">
+        <form action="#">
+          <p>
+            <label for="full-name">Full Name:</label>
+            <input type="text" name="full-name" id="full-name">
+          </p>
+
+          <p>
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob">
+          </p>
+          <p>
+            <label for="dept">Department:</label>
+            <input type="text" name="dept">
+          </p>
+          <p>
+            <label for="pword">Password:</label>
+            <input type="password" name="pword" id="pword">
+          </p>
+          <p class="buttons">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

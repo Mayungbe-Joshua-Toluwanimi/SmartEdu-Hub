@@ -6,9 +6,7 @@ nav.show-on-lg {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* align-items: baseline; */
   background: var(--color-background);
-  /* border: 1px solid grey; */
   padding: 1rem 3rem;
   z-index: 100;
   box-shadow: 2px 2px 1rem grey;
@@ -16,20 +14,18 @@ nav.show-on-lg {
 nav.show-on-lg ul {
   display: flex;
   flex-direction: row;
-  /* justify-content: baseline; */
-  /* align-items: baseline; */
-  border: 1px solid grey;
   gap: 1rem;
-  /* padding: 0; */
 }
 nav.show-on-lg ul li {
-  border: 1px solid;
-  /* padding: 0; */
-  /* margin: 0; */
+  /* border: 1px solid; */
 }
 nav.show-on-lg a.primary-cta {
   padding: 5px 1rem;
   border-radius: 1rem;
+}
+nav.show-on-lg ul a:hover {
+  text-decoration: underline;
+  /* font-weight: bold; */
 }
 @media (max-width: 768px) {/*Phone screen*/
   nav.show-on-lg {
@@ -41,12 +37,8 @@ nav.show-on-lg a.primary-cta {
   :root {
     --container-padding: 2rem 3rem;
   }
-  .hide-on-lg {
+  nav.show-on-lg {
     display: none;
-  }
-  .show-on-lg {
-    display: block;
-    
   }
   body {
     font-size: 1.2rem;
@@ -59,9 +51,7 @@ nav.show-on-lg a.primary-cta {
     /* font-weight: bold; */
     margin: 15px 0;
   }
-  nav.show-on-lg .cta {
-    padding: 8px 1rem;
-  }
+
   .hero {
     margin-top: 9rem;
   }
@@ -100,5 +90,15 @@ nav.show-on-lg a.primary-cta {
   }
   section#about .container {
     grid-template-columns: 50% 50%;
+  }
+  .hide-on-lg {
+    display: none;
+  }
+  nav.show-on-lg {
+    display: flex;
+    
+  }
+  nav.show-on-lg .cta {
+    padding: 8px 1rem;
   }
 }

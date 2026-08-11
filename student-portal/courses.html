@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Courses | SmartEdu University</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0">
+
+    <link rel="stylesheet" href="css/student.css">
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+
+            <a href="student-dashboard.html" class="portal-logo">
+
+                <div class="logo-icon">
+
+                    <span class="material-symbols-outlined">
+                        school
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <h2>SmartEdu</h2>
+
+                    <span>Student Portal</span>
+
+                </div>
+
+            </a>
+
+
+            <button class="close-sidebar" id="close-sidebar">
+
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">
+                MAIN MENU
+            </p>
+
+
+            <a href="student-dashboard.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    dashboard
+                </span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="profile.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+
+                <span>My Profile</span>
+
+            </a>
+
+
+            <a href="courses.html" class="nav-link active">
+
+                <span class="material-symbols-outlined">
+                    menu_book
+                </span>
+
+                <span>My Courses</span>
+
+            </a>
+
+
+            <a href="assignments.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    assignment
+                </span>
+
+                <span>Assignments</span>
+
+                <span class="notification-count">
+                    2
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    fact_check
+                </span>
+
+                <span>Attendance</span>
+
+            </a>
+
+
+            <a href="payments.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    payments
+                </span>
+
+                <span>Payments</span>
+
+            </a>
+
+
+            <a href="library.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    local_library
+                </span>
+
+                <span>E-Library</span>
+
+            </a>
+
+
+            <a href="notifications.html" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+
+                <span>Notifications</span>
+
+                <span class="notification-count">
+                    3
+                </span>
+
+            </a>
+
+
+            <p class="nav-title second-title">
+                ACCOUNT
+            </p>
+
+
+            <a href="#" class="nav-link">
+
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+
+                <span>Settings</span>
+
+            </a>
+
+
+            <a href="#" class="nav-link logout">
+
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+
+                <span>Logout</span>
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="menu-btn" id="menu-btn">
+
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+
+            </button>
+
+
+            <div class="topbar-search">
+
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Search..."
+                >
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="notification-btn">
+
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="student-user">
+
+                    <div class="student-avatar">
+                        JT
+                    </div>
+
+
+                    <div class="student-info">
+
+                        <strong>
+                            Joshua Toluwanimi
+                        </strong>
+
+                        <span>
+                            Computer Science
+                        </span>
+
+                    </div>
+
+
+                    <span class="material-symbols-outlined dropdown-icon">
+                        keyboard_arrow_down
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- PAGE -->
+
+        <section class="dashboard">
+
+
+            <div class="page-heading">
+
+                <div>
+
+                    <p class="welcome-text">
+                        2025/2026 Academic Session
+                    </p>
+
+                    <h1>
+                        My Courses
+                    </h1>
+
+                    <p>
+                        View and manage your registered courses.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-btn" id="register-course-btn">
+
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+
+                    Register Course
+
+                </button>
+
+            </div>
+
+
+
+            <!-- COURSE SUMMARY -->
+
+            <div class="stats-grid course-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <span class="material-symbols-outlined">
+                            menu_book
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Registered Courses
+                        </span>
+
+                        <h2>
+                            6
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <span class="material-symbols-outlined">
+                            school
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Total Credit Units
+                        </span>
+
+                        <h2>
+                            18
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <span class="material-symbols-outlined">
+                            pending_actions
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Pending Courses
+                        </span>
+
+                        <h2>
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+
+                        <span class="material-symbols-outlined">
+                            calendar_month
+                        </span>
+
+                    </div>
+
+                    <div class="stat-details">
+
+                        <span>
+                            Current Semester
+                        </span>
+
+                        <h2>
+                            2nd
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- REGISTERED COURSES -->
+
+            <div class="dashboard-card">
+
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h3>
+                            Registered Courses
+                        </h3>
+
+                        <p>
+                            Courses registered for the current semester
+                        </p>
+
+                    </div>
+
+
+                    <div class="course-filter">
+
+                        <select id="semester-select">
+
+                            <option>
+                                Second Semester
+                            </option>
+
+                            <option>
+                                First Semester
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="course-table-wrapper">
+
+                    <table class="course-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Course Code
+                                </th>
+
+                                <th>
+                                    Course Title
+                                </th>
+
+                                <th>
+                                    Lecturer
+                                </th>
+
+                                <th>
+                                    Credit Unit
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CSC 401
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Software Engineering
+                                </td>
+
+                                <td>
+                                    Dr. Williams
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+
+                                    <span class="table-status">
+                                        Registered
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CSC 403
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Web Application Development
+                                </td>
+
+                                <td>
+                                    Mr. Johnson
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+
+                                    <span class="table-status">
+                                        Registered
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CSC 405
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Database Management
+                                </td>
+
+                                <td>
+                                    Dr. Okafor
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+
+                                    <span class="table-status">
+                                        Registered
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CSC 407
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Computer Networks
+                                </td>
+
+                                <td>
+                                    Prof. Adams
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+
+                                    <span class="table-status">
+                                        Registered
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CSC 409
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Human Computer Interaction
+                                </td>
+
+                                <td>
+                                    Mrs. Brown
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+
+                                    <span class="table-status">
+                                        Registered
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CSC 411
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Artificial Intelligence
+                                </td>
+
+                                <td>
+                                    Dr. Ahmed
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+
+                                    <span class="table-status">
+                                        Registered
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-btn">
+                                        View
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE REGISTRATION INFO -->
+
+            <div class="dashboard-card registration-info-card">
+
+                <div class="registration-info-icon">
+
+                    <span class="material-symbols-outlined">
+                        info
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Course Registration Information
+                    </h3>
+
+                    <p>
+                        Make sure you have completed your school fee
+                        payment before registering your courses.
+                        Contact your department if you encounter
+                        any issues with course registration.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="js/student.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | SmartEdu University</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0">
+
+    <link rel="stylesheet" href="css/student.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+
+            <a href="student-dashboard.html" class="portal-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">school</span>
+                </div>
+
+                <div>
+                    <h2>SmartEdu</h2>
+                    <span>Student Portal</span>
+                </div>
+            </a>
+
+            <button class="close-sidebar" id="close-sidebar">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="student-dashboard.html" class="nav-link active">
+                <span class="material-symbols-outlined">dashboard</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="profile.html" class="nav-link">
+                <span class="material-symbols-outlined">person</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="courses.html" class="nav-link">
+                <span class="material-symbols-outlined">menu_book</span>
+                <span>My Courses</span>
+            </a>
+
+            <a href="assignments.html" class="nav-link">
+                <span class="material-symbols-outlined">assignment</span>
+                <span>Assignments</span>
+                <span class="notification-count">2</span>
+            </a>
+
+            <a href="attendance.html" class="nav-link">
+                <span class="material-symbols-outlined">fact_check</span>
+                <span>Attendance</span>
+            </a>
+
+            <a href="payments.html" class="nav-link">
+                <span class="material-symbols-outlined">payments</span>
+                <span>Payments</span>
+            </a>
+
+            <a href="library.html" class="nav-link">
+                <span class="material-symbols-outlined">local_library</span>
+                <span>E-Library</span>
+            </a>
+
+            <a href="notifications.html" class="nav-link">
+                <span class="material-symbols-outlined">notifications</span>
+                <span>Notifications</span>
+                <span class="notification-count">3</span>
+            </a>
+
+            <p class="nav-title second-title">ACCOUNT</p>
+
+            <a href="#" class="nav-link">
+                <span class="material-symbols-outlined">settings</span>
+                <span>Settings</span>
+            </a>
+
+            <a href="#" class="nav-link logout">
+                <span class="material-symbols-outlined">logout</span>
+                <span>Logout</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Area -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <button class="menu-btn" id="menu-btn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <div class="topbar-search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="topbar-right">
+
+                <button class="notification-btn">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="student-user">
+
+                    <div class="student-avatar">
+                        JT
+                    </div>
+
+                    <div class="student-info">
+                        <strong>Joshua Toluwanimi</strong>
+                        <span>Computer Science</span>
+                    </div>
+
+                    <span class="material-symbols-outlined dropdown-icon">
+                        keyboard_arrow_down
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard Content -->
+        <section class="dashboard">
+
+            <div class="page-heading">
+
+                <div>
+                    <p class="welcome-text">Tuesday, August 11, 2026</p>
+                    <h1>Welcome back, Joshua 👋</h1>
+                    <p>Here's an overview of your academic activities.</p>
+                </div>
+
+                <a href="courses.html" class="primary-btn">
+                    <span class="material-symbols-outlined">add</span>
+                    Register Courses
+                </a>
+
+            </div>
+
+
+            <!-- Statistics Cards -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        <span class="material-symbols-outlined">menu_book</span>
+                    </div>
+
+                    <div class="stat-details">
+                        <span>Registered Courses</span>
+                        <h2>6</h2>
+                        <p class="positive">
+                            <span class="material-symbols-outlined">trending_up</span>
+                            This semester
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        <span class="material-symbols-outlined">assignment</span>
+                    </div>
+
+                    <div class="stat-details">
+                        <span>Pending Assignments</span>
+                        <h2>2</h2>
+                        <p class="warning-text">
+                            Due this week
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        <span class="material-symbols-outlined">fact_check</span>
+                    </div>
+
+                    <div class="stat-details">
+                        <span>Attendance</span>
+                        <h2>87%</h2>
+                        <p class="positive">
+                            Good standing
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        <span class="material-symbols-outlined">account_balance_wallet</span>
+                    </div>
+
+                    <div class="stat-details">
+                        <span>Payment Status</span>
+                        <h2>Paid</h2>
+                        <p class="positive">
+                            <span class="material-symbols-outlined">check_circle</span>
+                            Up to date
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Main Dashboard Grid -->
+            <div class="dashboard-grid">
+
+                <!-- Recent Courses -->
+                <div class="dashboard-card courses-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <h3>My Courses</h3>
+                            <p>Your registered courses this semester</p>
+                        </div>
+
+                        <a href="courses.html">View All</a>
+                    </div>
+
+
+                    <div class="course-list">
+
+                        <div class="course-item">
+
+                            <div class="course-code">
+                                CSC 401
+                            </div>
+
+                            <div class="course-info">
+                                <strong>Software Engineering</strong>
+                                <span>3 Credits • Dr. Williams</span>
+                            </div>
+
+                            <span class="course-status">Active</span>
+
+                        </div>
+
+
+                        <div class="course-item">
+
+                            <div class="course-code">
+                                CSC 403
+                            </div>
+
+                            <div class="course-info">
+                                <strong>Web Application Development</strong>
+                                <span>3 Credits • Mr. Johnson</span>
+                            </div>
+
+                            <span class="course-status">Active</span>
+
+                        </div>
+
+
+                        <div class="course-item">
+
+                            <div class="course-code">
+                                CSC 405
+                            </div>
+
+                            <div class="course-info">
+                                <strong>Database Management</strong>
+                                <span>3 Credits • Dr. Okafor</span>
+                            </div>
+
+                            <span class="course-status">Active</span>
+
+                        </div>
+
+
+                        <div class="course-item">
+
+                            <div class="course-code">
+                                CSC 407
+                            </div>
+
+                            <div class="course-info">
+                                <strong>Computer Networks</strong>
+                                <span>3 Credits • Prof. Adams</span>
+                            </div>
+
+                            <span class="course-status">Active</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Academic Progress -->
+                <div class="dashboard-card progress-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <h3>Academic Progress</h3>
+                            <p>Overall semester progress</p>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-circle">
+
+                        <div class="circle-content">
+                            <strong>78%</strong>
+                            <span>Complete</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-info">
+
+                        <div>
+                            <span>Courses Completed</span>
+                            <strong>4 / 6</strong>
+                        </div>
+
+                        <div>
+                            <span>Assignments</span>
+                            <strong>8 / 10</strong>
+                        </div>
+
+                        <div>
+                            <span>Attendance</span>
+                            <strong>87%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Grid -->
+            <div class="bottom-grid">
+
+                <!-- Upcoming Assignments -->
+                <div class="dashboard-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <h3>Upcoming Assignments</h3>
+                            <p>Don't miss your deadlines</p>
+                        </div>
+
+                        <a href="assignments.html">View All</a>
+                    </div>
+
+
+                    <div class="assignment-list">
+
+                        <div class="assignment-item">
+
+                            <div class="assignment-icon">
+                                <span class="material-symbols-outlined">description</span>
+                            </div>
+
+                            <div class="assignment-info">
+                                <strong>Database Design Project</strong>
+                                <span>CSC 405</span>
+                            </div>
+
+                            <div class="deadline">
+                                <span>Due</span>
+                                <strong>Aug 14</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="assignment-item">
+
+                            <div class="assignment-icon">
+                                <span class="material-symbols-outlined">description</span>
+                            </div>
+
+                            <div class="assignment-info">
+                                <strong>Web Development Task</strong>
+                                <span>CSC 403</span>
+                            </div>
+
+                            <div class="deadline">
+                                <span>Due</span>
+                                <strong>Aug 17</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Recent Notifications -->
+                <div class="dashboard-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <h3>Recent Notifications</h3>
+                            <p>Latest updates from the university</p>
+                        </div>
+
+                        <a href="notifications.html">View All</a>
+                    </div>
+
+
+                    <div class="notification-list">
+
+                        <div class="notification-item">
+
+                            <div class="notification-icon blue">
+                                <span class="material-symbols-outlined">campaign</span>
+                            </div>
+
+                            <div>
+                                <strong>Course registration is open</strong>
+                                <span>2 hours ago</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-item">
+
+                            <div class="notification-icon green">
+                                <span class="material-symbols-outlined">payments</span>
+                            </div>
+
+                            <div>
+                                <strong>Payment successfully verified</strong>
+                                <span>Yesterday</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-item">
+
+                            <div class="notification-icon orange">
+                                <span class="material-symbols-outlined">assignment</span>
+                            </div>
+
+                            <div>
+                                <strong>New assignment posted</strong>
+                                <span>2 days ago</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/student.js"></script>
+
+</body>
+</html>
