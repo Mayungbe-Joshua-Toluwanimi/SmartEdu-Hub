@@ -17,3 +17,8 @@ input {
   font-size: inherit;
   border-radius: 2px;
 }
+p.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
